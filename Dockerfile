@@ -2,7 +2,7 @@ FROM debian:11
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get -y install \
     python3 python3-dev python3-dev python3-pip python3-venv wget
-RUN apt-get -y install git curl python3-pip ffmpeg tesseract-ocr libtesseract-dev libleptonica-dev pkg-config tesseract-ocr-eng
+RUN apt-get -y install git curl python3-pip ffmpeg
 #RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 #RUN dpkg -i google-chrome-stable_current_amd64.deb; apt-get -fy install
 ARG USER=root
